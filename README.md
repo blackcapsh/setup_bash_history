@@ -15,10 +15,3 @@ HISTCONTROL=ignoredups:erasedups        # sin duplicados
 shopt -s histappend       # no sobreescribe, acumula
 PROMPT_COMMAND="history -a; history -c; history -r"  # sincroniza entre sesiones
 Verificar que funciona
-
-Después de ejecutar, recarga la sesión actual:
-bashsource ~/.bashrc
-history | tail -5
-# Verás algo así:
-# 1234  2025-06-23 14:32:01  ls -la
-# 1235  2025-06-23 14:32:15  sudo apt update
